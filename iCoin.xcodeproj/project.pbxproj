@@ -7,18 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080C2F572769086900525438 /* ICDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080C2F562769086900525438 /* ICDataService.swift */; };
+		080C2F5A27690E3C00525438 /* ICModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080C2F5927690E3C00525438 /* ICModel.swift */; };
+		080C2F5C2769123A00525438 /* ICDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080C2F5B2769123A00525438 /* ICDetailModel.swift */; };
+		080C2F5F276913E300525438 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080C2F5E276913E300525438 /* String.swift */; };
 		0844FCAF2767AE3F0066193C /* iCoinApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0844FCAE2767AE3F0066193C /* iCoinApp.swift */; };
 		0844FCB12767AE3F0066193C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0844FCB02767AE3F0066193C /* ContentView.swift */; };
 		0844FCB32767AE400066193C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0844FCB22767AE400066193C /* Assets.xcassets */; };
 		0844FCB62767AE400066193C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0844FCB52767AE400066193C /* Preview Assets.xcassets */; };
+		0844FCC12767BAFC0066193C /* ICNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0844FCC02767BAFC0066193C /* ICNetworkManager.swift */; };
+		0844FCC32767D4B80066193C /* ICLocalFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0844FCC22767D4B80066193C /* ICLocalFileManager.swift */; };
+		0844FCC52768FC620066193C /* ICHapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0844FCC42768FC620066193C /* ICHapticManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		080C2F562769086900525438 /* ICDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICDataService.swift; sourceTree = "<group>"; };
+		080C2F5927690E3C00525438 /* ICModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICModel.swift; sourceTree = "<group>"; };
+		080C2F5B2769123A00525438 /* ICDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICDetailModel.swift; sourceTree = "<group>"; };
+		080C2F5E276913E300525438 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		0844FCAB2767AE3F0066193C /* iCoin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCoin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0844FCAE2767AE3F0066193C /* iCoinApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iCoinApp.swift; sourceTree = "<group>"; };
 		0844FCB02767AE3F0066193C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0844FCB22767AE400066193C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0844FCB52767AE400066193C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0844FCC02767BAFC0066193C /* ICNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICNetworkManager.swift; sourceTree = "<group>"; };
+		0844FCC22767D4B80066193C /* ICLocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICLocalFileManager.swift; sourceTree = "<group>"; };
+		0844FCC42768FC620066193C /* ICHapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICHapticManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +46,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080C2F5827690E1200525438 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				080C2F562769086900525438 /* ICDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		080C2F5D276913B600525438 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				080C2F5E276913E300525438 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		0844FCA22767AE3F0066193C = {
 			isa = PBXGroup;
 			children = (
@@ -51,6 +81,11 @@
 		0844FCAD2767AE3F0066193C /* iCoin */ = {
 			isa = PBXGroup;
 			children = (
+				080C2F5D276913B600525438 /* Extensions */,
+				0844FCBC2767BA220066193C /* Utils */,
+				0844FCBE2767BA760066193C /* Managers */,
+				080C2F5827690E1200525438 /* Services */,
+				0844FCBF2767BA900066193C /* Models */,
 				0844FCAE2767AE3F0066193C /* iCoinApp.swift */,
 				0844FCB02767AE3F0066193C /* ContentView.swift */,
 				0844FCB22767AE400066193C /* Assets.xcassets */,
@@ -65,6 +100,32 @@
 				0844FCB52767AE400066193C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0844FCBC2767BA220066193C /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		0844FCBE2767BA760066193C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0844FCC02767BAFC0066193C /* ICNetworkManager.swift */,
+				0844FCC22767D4B80066193C /* ICLocalFileManager.swift */,
+				0844FCC42768FC620066193C /* ICHapticManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		0844FCBF2767BA900066193C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				080C2F5927690E3C00525438 /* ICModel.swift */,
+				080C2F5B2769123A00525438 /* ICDetailModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +198,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0844FCC12767BAFC0066193C /* ICNetworkManager.swift in Sources */,
+				0844FCC52768FC620066193C /* ICHapticManager.swift in Sources */,
 				0844FCB12767AE3F0066193C /* ContentView.swift in Sources */,
+				080C2F5F276913E300525438 /* String.swift in Sources */,
 				0844FCAF2767AE3F0066193C /* iCoinApp.swift in Sources */,
+				0844FCC32767D4B80066193C /* ICLocalFileManager.swift in Sources */,
+				080C2F572769086900525438 /* ICDataService.swift in Sources */,
+				080C2F5C2769123A00525438 /* ICDetailModel.swift in Sources */,
+				080C2F5A27690E3C00525438 /* ICModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
